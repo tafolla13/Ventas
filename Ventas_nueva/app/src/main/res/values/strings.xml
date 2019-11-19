@@ -2,15 +2,27 @@
     <string name="app_name">Ventas_nueva</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">Sahuayo</string>
+    <string name="nav_header_subtitle">Ventas</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
-    <string name="menu_tools">Tools</string>
-    <string name="menu_share">Share</string>
-    <string name="menu_send">Send</string>
+
+    <string name="menu_pedidos">Pedidos</string>
+    <string name="clientes">Clientes</string>
+    <string name="menu_ped_ant">Pedidos Anteriores</string>
+    <string name="menu_cobranza">Cobranza</string>
+    <string name="menu_cob_ant">Cobranza Anteriores</string>
+    <string name="menu_indi">Indicadores</string>
+    <string name="menu_publicidad">Publicidad</string>
+    <string name="menu_cotizacion">Cotización</string>
+    <string name="centro_mensajes">Centro de Mensajes</string>
+    <string name="merca_transito">Mercancia Transito</string>
+    <string name="llenado_camion">Llenado de Camión</string>
+    <string name="catalogos">Catálogos</string>
+    <string name="operaciones">Operaciones</string>
+    <string name="ajustes">Ajustes</string>
+    <string name="acerca">Acerca De</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
