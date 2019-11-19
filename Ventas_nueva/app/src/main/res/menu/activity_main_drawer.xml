@@ -5,34 +5,80 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:id="@+id/nav_clientes"
+            android:icon=""
+            android:title="@string/clientes" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:id="@+id/nav_pedidos"
+            android:icon=""
+            android:title="@string/menu_pedidos" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:id="@+id/nav_ped_ant"
+            android:icon=""
+            android:title="@string/menu_ped_ant" />
         <item
-            android:id="@+id/nav_tools"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="@string/menu_tools" />
+            android:id="@+id/nav_cob"
+            android:icon=""
+            android:title="@string/menu_cobranza" />
+        <item
+            android:id="@+id/nav_cob_ant"
+            android:icon=""
+            android:title="@string/menu_cob_ant" />
+        <item
+            android:id="@+id/nav_indi"
+            android:icon=""
+            android:title="@string/menu_indi" />
+        <item
+            android:id="@+id/nav_publi"
+            android:icon=""
+            android:title="@string/menu_publicidad" />
+        <item
+            android:id="@+id/nav_coti"
+            android:icon=""
+            android:title="@string/menu_cotizacion" />
+        <item
+            android:id="@+id/nav_mensa"
+            android:icon=""
+            android:title="@string/centro_mensajes" />
+
+
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="Información Mercancia">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="@string/menu_share" />
+                android:id="@+id/nav_merca_trans"
+                android:icon=""
+                android:title="@string/merca_transito" />
             <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="@string/menu_send" />
+                android:id="@+id/nav_llenado"
+                android:icon=""
+                android:title="@string/llenado_camion" />
         </menu>
     </item>
 
+    <item android:title="Sincronización">
+        <menu>
+            <item
+                android:id="@+id/nav_catalogo"
+                android:icon=""
+                android:title="@string/catalogos" />
+            <item
+                android:id="@+id/nav_oper"
+                android:icon=""
+                android:title="@string/operaciones" />
+        </menu>
+    </item>
+    <item android:title="Configuración">
+        <menu>
+            <item
+                android:id="@+id/nav_ajustes"
+                android:icon=""
+                android:title="@string/ajustes" />
+            <item
+                android:id="@+id/nav_acerca"
+                android:icon=""
+                android:title="@string/acerca" />
+        </menu>
+    </item>
 </menu>

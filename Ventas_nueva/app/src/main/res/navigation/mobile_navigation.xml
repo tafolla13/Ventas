@@ -3,41 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
-
+    app:startDestination="@id/mainActivity">
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.example.ventas_nueva.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
-
+        android:id="@+id/clientes"
+        android:name="com.example.ventas_nueva.ventas.Clientes.Clientes"
+        android:label="fragment_clientes"
+        tools:layout="@layout/fragment_clientes" />
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.ventas_nueva.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
+        android:id="@+id/pedidos"
+        android:name="com.example.ventas_nueva.ventas.Pedidos.Pedidos"
+        android:label="fragment_pedidos"
+        tools:layout="@layout/fragment_pedidos" />
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.ventas_nueva.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
-
-    <fragment
-        android:id="@+id/nav_tools"
-        android:name="com.example.ventas_nueva.ui.tools.ToolsFragment"
-        android:label="@string/menu_tools"
-        tools:layout="@layout/fragment_tools" />
-
-    <fragment
-        android:id="@+id/nav_share"
-        android:name="com.example.ventas_nueva.ui.share.ShareFragment"
-        android:label="@string/menu_share"
-        tools:layout="@layout/fragment_share" />
-
-    <fragment
-        android:id="@+id/nav_send"
-        android:name="com.example.ventas_nueva.ui.send.SendFragment"
-        android:label="@string/menu_send"
-        tools:layout="@layout/fragment_send" />
+        android:id="@+id/pedidosAnteriores"
+        android:name="com.example.ventas_nueva.ventas.PedidosAnteriores.PedidosAnteriores"
+        android:label="fragment_pedidos_anteriores"
+        tools:layout="@layout/fragment_pedidos_anteriores" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.ventas_nueva.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
 </navigation>
