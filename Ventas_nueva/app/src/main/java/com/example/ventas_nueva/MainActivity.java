@@ -31,26 +31,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_clientes, R.id.nav_pedidos, R.id.nav_ped_ant)
+                 R.id.nav_pedidos, R.id.nav_ped_ant, R.id.nav_acerca, R.id.nav_ajustes,
+                R.id.nav_catalogo, R.id.nav_cob, R.id.nav_cob_ant, R.id.nav_coti, R.id.nav_indi,
+                R.id.nav_llenado,R.id.nav_clientes, R.id.nav_mensa, R.id.nav_productos, R.id.nav_precios, R.id.nav_merca_trans, R.id.nav_oper, R.id.nav_publi)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
     }
+
 
 
     @Override

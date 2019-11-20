@@ -8,7 +8,9 @@
 
 
     <string name="menu_pedidos">Pedidos</string>
-    <string name="clientes">Clientes</string>
+    <string name="menu_clientes">Clientes</string>
+    <string name="menu_productos">Productos</string>
+    <string name="menu_precios">Precios</string>
     <string name="menu_ped_ant">Pedidos Anteriores</string>
     <string name="menu_cobranza">Cobranza</string>
     <string name="menu_cob_ant">Cobranza Anteriores</string>
@@ -23,6 +25,15 @@
     <string name="ajustes">Ajustes</string>
     <string name="acerca">Acerca De</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    //FRAGMENT PRODUCTO
+    <string name="prod">PRODUCTO</string>
+    <string name="id_prod">ID</string>
+    <string name="nom_prod">NOMBRE DEL PRODUCTO</string>
+    <string name="precio_prod">PRECIO DEL PRODUCTO</string>
+    <string name="detalle_prod">DETALLES DEL PRODUCTO</string>
+
+
+    <string name="btn_guardar">REGISTRAR</string>
+    <string name="btn_cancelar">CANCELAR</string>
+    <string name="hello_blank_fragment">FRAGMENT NUEVO SIN MODIFICAR</string>
 </resources>

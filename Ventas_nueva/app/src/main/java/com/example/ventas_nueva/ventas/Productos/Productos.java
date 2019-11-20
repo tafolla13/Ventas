@@ -1,4 +1,4 @@
-package com.example.ventas_nueva.ventas.Cobranza;
+package com.example.ventas_nueva.ventas.Productos;
 
 
 import android.os.Bundle;
@@ -14,10 +14,10 @@ import com.example.ventas_nueva.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Cobranza extends Fragment {
+public class Productos extends Fragment {
 
 
-    public Cobranza() {
+    public Productos() {
         // Required empty public constructor
     }
 
@@ -26,7 +26,7 @@ public class Cobranza extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_cobranza, container, false);
+        return inflater.inflate(R.layout.fragment_productos, container, false);
     }
 
 }
