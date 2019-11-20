@@ -33,7 +33,7 @@
         app:layout_constraintTop_toBottomOf="@+id/precio_prod" />
 
     <EditText
-        android:id="@+id/Ed_Id_Prod"
+        android:id="@+id/nom_cliente"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="132dp"
@@ -55,10 +55,10 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Ed_nombre_prod" />
+        app:layout_constraintTop_toBottomOf="@+id/apellido_cliente" />
 
     <EditText
-        android:id="@+id/Ed_nombre_prod"
+        android:id="@+id/apellido_cliente"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -67,7 +67,7 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Ed_Id_Prod" />
+        app:layout_constraintTop_toBottomOf="@+id/nom_cliente" />
 
     <EditText
         android:id="@+id/precio_prod"
@@ -82,12 +82,12 @@
         app:layout_constraintTop_toBottomOf="@+id/Ed_Detalle_prod" />
 
     <TextView
-        android:id="@+id/title_prod"
+        android:id="@+id/title_clientes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/prod"
         android:textColor="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/Ed_Id_Prod"
+        app:layout_constraintBottom_toTopOf="@+id/nom_cliente"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
