@@ -3,25 +3,90 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/mainActivity">
+    app:startDestination="@id/nav_clientes">
     <fragment
-        android:id="@+id/clientes"
+        android:id="@+id/nav_clientes"
         android:name="com.example.ventas_nueva.ventas.Clientes.Clientes"
-        android:label="fragment_clientes"
+        android:label="@string/menu_clientes"
         tools:layout="@layout/fragment_clientes" />
     <fragment
-        android:id="@+id/pedidos"
+        android:id="@+id/nav_pedidos"
         android:name="com.example.ventas_nueva.ventas.Pedidos.Pedidos"
-        android:label="fragment_pedidos"
+        android:label="Pedidos"
         tools:layout="@layout/fragment_pedidos" />
     <fragment
-        android:id="@+id/pedidosAnteriores"
+        android:id="@+id/nav_ped_ant"
         android:name="com.example.ventas_nueva.ventas.PedidosAnteriores.PedidosAnteriores"
-        android:label="fragment_pedidos_anteriores"
+        android:label="Pedidos Anteriores"
         tools:layout="@layout/fragment_pedidos_anteriores" />
-    <activity
-        android:id="@+id/mainActivity"
-        android:name="com.example.ventas_nueva.MainActivity"
-        android:label="activity_main"
-        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/nav_acerca"
+        android:name="com.example.ventas_nueva.Configuracion.AcercaDe.Acercade"
+        android:label="Acerca De"
+        tools:layout="@layout/fragment_acercade" />
+    <fragment
+        android:id="@+id/nav_ajustes"
+        android:name="com.example.ventas_nueva.Configuracion.Ajustes.Ajustes"
+        android:label="Ajustes"
+        tools:layout="@layout/fragment_ajustes" />
+    <fragment
+        android:id="@+id/nav_mensa"
+        android:name="com.example.ventas_nueva.ventas.CentroMensajes.CentroMensajes"
+        android:label="Centro de Mensajes"
+        tools:layout="@layout/fragment_centro_mensajes" />
+    <fragment
+        android:id="@+id/nav_catalogo"
+        android:name="com.example.ventas_nueva.Sincronizacion.Catalogos.Catalogos"
+        android:label="Catálogo"
+        tools:layout="@layout/fragment_catalogos" />
+    <fragment
+        android:id="@+id/nav_cob"
+        android:name="com.example.ventas_nueva.ventas.Cobranza.Cobranza"
+        android:label="Cobranza"
+        tools:layout="@layout/fragment_cobranza" />
+    <fragment
+        android:id="@+id/nav_cob_ant"
+        android:name="com.example.ventas_nueva.ventas.CobranzaAnteriores.CobranzaAnterior"
+        android:label="Cobranza Anterior"
+        tools:layout="@layout/fragment_cobranza_anterior" />
+    <fragment
+        android:id="@+id/nav_coti"
+        android:name="com.example.ventas_nueva.ventas.Cotizacion.Cotizacion"
+        android:label="Cotización"
+        tools:layout="@layout/fragment_cotizacion" />
+    <fragment
+        android:id="@+id/nav_indi"
+        android:name="com.example.ventas_nueva.ventas.Indicadores.Indicadores"
+        android:label="Indicadores"
+        tools:layout="@layout/fragment_indicadores" />
+    <fragment
+        android:id="@+id/nav_llenado"
+        android:name="com.example.ventas_nueva.InformacionMercancia.LlenadodeCamion.LlenadoCamion"
+        android:label="Llenado de Camión"
+        tools:layout="@layout/fragment_llenado_camion" />
+    <fragment
+        android:id="@+id/nav_merca_trans"
+        android:name="com.example.ventas_nueva.InformacionMercancia.MercanciaTransito.Mercancia"
+        android:label="Mercancia Transito"
+        tools:layout="@layout/fragment_mercancia" />
+    <fragment
+        android:id="@+id/nav_oper"
+        android:name="com.example.ventas_nueva.Sincronizacion.Operaciones.Operaciones"
+        android:label="Operaciones"
+        tools:layout="@layout/fragment_operaciones" />
+    <fragment
+        android:id="@+id/nav_publi"
+        android:name="com.example.ventas_nueva.ventas.Publicidad.Publicidad"
+        android:label="Publicidad"
+        tools:layout="@layout/fragment_publicidad" />
+    <fragment
+        android:id="@+id/nav_precios"
+        android:name="com.example.ventas_nueva.ventas.Precios.Precios"
+        android:label="Precios"
+        tools:layout="@layout/fragment_precios" />
+    <fragment
+        android:id="@+id/nav_productos"
+        android:name="com.example.ventas_nueva.ventas.Productos.Productos"
+        android:label="Productos"
+        tools:layout="@layout/fragment_productos" />
 </navigation>
