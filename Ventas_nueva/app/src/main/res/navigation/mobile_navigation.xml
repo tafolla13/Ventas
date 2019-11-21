@@ -6,7 +6,7 @@
     app:startDestination="@id/nav_clientes">
     <fragment
         android:id="@+id/nav_clientes"
-        android:name="com.example.ventas_nueva.ventas.Clientes.Clientes"
+        android:name="com.example.ventas_nueva.ventas.Clientes.ClientesFragment"
         android:label="@string/menu_clientes"
         tools:layout="@layout/fragment_clientes" />
     <fragment
