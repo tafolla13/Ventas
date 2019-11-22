@@ -38,10 +38,10 @@ public class ClientesFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_clientes, container, false);
-        nomb= rootView.findViewById(R.id.nom_cliente);
-        apellidos = rootView.findViewById(R.id.apellido_cliente);
-        nume = rootView.findViewById(R.id.telefono);
-        correo = rootView.findViewById(R.id.email);
+        nomb= rootView.findViewById(R.id.id_prod);
+        apellidos = rootView.findViewById(R.id.nom_prod);
+        nume = rootView.findViewById(R.id.precio_prod);
+        correo = rootView.findViewById(R.id.detalle_pro);
         guardar = rootView.findViewById(R.id.button4);
         Realm.init(getActivity());
         realmDb=Realm.getDefaultInstance();

@@ -17,7 +17,7 @@
         android:text="@string/btn_cancelar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/telefono" />
+        app:layout_constraintTop_toBottomOf="@+id/precio_prod" />
 
     <Button
         android:id="@+id/button"
@@ -30,10 +30,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.23"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/telefono" />
+        app:layout_constraintTop_toBottomOf="@+id/precio_prod" />
 
     <EditText
-        android:id="@+id/nom_cliente"
+        android:id="@+id/id_prod"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="132dp"
@@ -46,7 +46,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/detalle_pro"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -55,10 +55,10 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/apellido_cliente" />
+        app:layout_constraintTop_toBottomOf="@+id/nom_prod" />
 
     <EditText
-        android:id="@+id/apellido_cliente"
+        android:id="@+id/nom_prod"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -67,10 +67,10 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nom_cliente" />
+        app:layout_constraintTop_toBottomOf="@+id/id_prod" />
 
     <EditText
-        android:id="@+id/telefono"
+        android:id="@+id/precio_prod"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -79,7 +79,7 @@
         android:inputType="numberSigned"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email" />
+        app:layout_constraintTop_toBottomOf="@+id/detalle_pro" />
 
     <TextView
         android:id="@+id/title_clientes"
@@ -87,7 +87,7 @@
         android:layout_height="wrap_content"
         android:text="@string/prod"
         android:textColor="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/nom_cliente"
+        app:layout_constraintBottom_toTopOf="@+id/id_prod"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
