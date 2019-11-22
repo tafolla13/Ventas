@@ -52,27 +52,30 @@ public class ClientesFragment extends Fragment {
         guardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                try {
-                    realmDb.beginTransaction();
-                    Number maxId = realmDb.where(Cliente.class).max("id");
-                    int nextId = (maxId == null) ? 1 : maxId.intValue() + 1;
-                    Cliente cliente = realmDb.createObject(Cliente.class, nextId);
-                    String numero = nume.getText().toString();
-                    String nom = nomb.getText().toString();
-                    String apellido = apellidos.getText().toString();
-                    String email = correo.getText().toString();
-                    cliente.setNombre(nom);
-                    cliente.setApellidos(apellido);
-                    cliente.setCorreo(email);
-                    cliente.setNumero_de_telefono(numero);
-                    realmDb.insertOrUpdate(cliente);
-                    realmDb.commitTransaction();
-                    limpiar();
-                    Toast.makeText(getContext(),"Cliente registrado exitosamente",Toast.LENGTH_LONG).show();
-                }catch (Exception ex){
-                    Log.d("RError",ex.toString());
-                    Toast.makeText(getContext(), "Error en realm", Toast.LENGTH_SHORT).show();
-                }
+                String numero = nume.getText().toString();
+                String nom = nomb.getText().toString();
+                String apellido = apellidos.getText().toString();
+                String email = correo.getText().toString();
+                if(!nom.isEmpty() && !apellido.isEmpty() && !email.isEmpty() &&!numero.isEmpty()) {
+                    try {
+                        realmDb.beginTransaction();
+                        Number maxId = realmDb.where(Cliente.class).max("id");
+                        int nextId = (maxId == null) ? 1 : maxId.intValue() + 1;
+                        Cliente cliente = realmDb.createObject(Cliente.class, nextId);
+                        cliente.setNombre(nom);
+                        cliente.setApellidos(apellido);
+                        cliente.setCorreo(email);
+                        cliente.setNumero_de_telefono(numero);
+                        realmDb.insertOrUpdate(cliente);
+                        realmDb.commitTransaction();
+                        limpiar();
+                        Toast.makeText(getContext(), "Cliente registrado exitosamente", Toast.LENGTH_LONG).show();
+                    } catch (Exception ex) {
+                        Log.d("RError", ex.toString());
+                        Toast.makeText(getContext(), "Error en realm", Toast.LENGTH_SHORT).show();
+                    }
+                }else
+                    Toast.makeText(getActivity(),"Todos los campos son requeridos",Toast.LENGTH_LONG).show();
             }
         });
     }
